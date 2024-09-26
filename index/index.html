@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transaction Record</title>
+
+    <!-- Link to CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Transaction Record</h1>
+
+        <form id="transactionForm" action="https://script.google.com/macros/s/AKfycbzW67lNo6mZZL3e1gJGpCbnOlxbo4cRIDFud6RYBQqp3qmlR9OeOcv72fR1DYBl5cPUvQ/exec" method="POST">
+            <!-- Name Input -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Transaction ID Input -->
+            <label for="transactionId">Transaction ID</label>
+            <input type="number" id="transactionId" name="transactionId" placeholder="Enter transaction ID" required>
+
+            <!-- Company Dropdown -->
+            <label for="company">Company</label>
+            <select id="company" name="company" required>
+                <option value="ea99">Ea99</option>
+                <option value="sega99">Sega99</option>
+                <option value="neogeo99">Neogeo99</option>
+                <option value="imp999">Imp999</option>
+            </select>
+
+            <!-- Transaction Type Dropdown -->
+            <label for="transactionType">Transaction Type</label>
+            <select id="transactionType" name="transactionType" required>
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+                <option value="cashout">Cash-out</option>
+                <option value="cashin">Cash-in</option>
+                <option value="pending">Pending</option>
+            </select>
+
+            <!-- Amount Input -->
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+            <!-- Remark Input -->
+            <label for="remark">Remark</label>
+            <input type="text" id="remark" name="remark" placeholder="Add any remarks" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Transaction</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
